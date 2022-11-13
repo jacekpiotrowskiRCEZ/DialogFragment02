@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Czy podoba Ci się ten obrazek?"
+            android:id="@+id/textView"
+            android:layout_column="0"
+            android:layout_span="2"
+            android:textSize="25sp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView android:id="@+id/imageView"
+            android:layout_column="0"
+            android:src="@drawable/ptak"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:text="Tak"
+        android:id="@+id/buttonTAK"
+        android:layout_column="0" />
+    <Button
+        android:text="Nie"
+        android:id="@+id/buttonNIE"
+        android:layout_column="1" />
+    </TableRow>
+
+
+</TableLayout>
